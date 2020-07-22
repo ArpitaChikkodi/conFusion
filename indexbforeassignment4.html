@@ -35,7 +35,7 @@
 
                 <!-- link to trigger modal -->
                 <span class="navbar-text">
-                    <a id="loginButton">
+                    <a data-toggle="modal" data-target="#loginModal">
                         <span class="fa fa-sign-in"></span>Login
                     </a>
                 </span>
@@ -86,7 +86,7 @@
 <!-- end of login modal -->
 
 <!-- start of reserve modal -->
-<div id="reserveModal" class="modal fade" role="dialog">
+<div id="ReserveModal" class="modal fade" role="dialog">
     <div class="modal-dialog modal-lg" role="content">
         <div class="modal-content">
             <div class="modal-header">
@@ -111,7 +111,7 @@
                             <label class="form-check-label" for="guest2">2</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input type="radio" class="form-check-input" name="numguests" id="guest3" value="guest3" checked>
+                            <input type="radio" class="form-check-input" name="numguests" id="guest3" value="guest3">
                             <label class="form-check-label" for="guest3">3</label>
                         </div>
                         <div class="form-check form-check-inline">
@@ -193,7 +193,7 @@
                     <!-- <a class="btn btn-warning btn-block btn-sm" href="#ReserveTable" role="button">Reserve a Table</a> -->
                     <!-- <a href="#ReserveTable" style="text-decoration: none;"><button type="button" class="btn btn-warning btn-lg btn-block">Reserve Table</button></a> -->
                 
-                    <a id="reserveButton" role="button"
+                    <a data-toggle="modal" data-target="#ReserveModal" role="button"
                         class="btn btn-warning btn-block nav-link btn-sm">Reserve a Table
                     </a>
 
@@ -389,17 +389,6 @@
                     $("#carouselButton").children("span").addClass('fa-pause');                    
                 }
             });
-
-            // javascript code for Reserve Table
-            $("#reserveButton").click(function(){
-            $('#reserveModal').modal('show');
-            });
-
-            // javascript code for Login Button
-            $("#loginButton").click(function(){
-            $('#loginModal').modal('show');
-            });
-
 
         //   Bootstrap JQuery component example pause and play two buttons
         //   $(document).ready(function(){

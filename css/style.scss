@@ -77,3 +77,16 @@ body{
 
 // include node-sass in package.json file
 // run >npm run scss
+
+
+.modal-header{
+    background-color: $background-dark;
+    color: floralwhite;
+    .close{
+        color: floralwhite;
+    }
+}
+
+.modal-body{
+    background-color: $background-pale;
+}
