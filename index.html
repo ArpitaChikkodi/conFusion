@@ -374,44 +374,7 @@
       <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
       <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     
-      <script>
-
-            $("#carouselButton").click(function(){
-                if ($("#carouselButton").children("span").hasClass('fa-pause')) {
-                    $("#mycarousel").carousel('pause');
-                    $("#carouselButton").children("span").removeClass('fa-pause');
-                    $("#carouselButton").children("span").addClass('fa-play');
-                     // this on both conditions resp, $("#carouselButton").children("span").replaceAll('fa fa-play');
-                }
-                else if ($("#carouselButton").children("span").hasClass('fa-play')){
-                    $("#mycarousel").carousel('cycle');
-                    $("#carouselButton").children("span").removeClass('fa-play');
-                    $("#carouselButton").children("span").addClass('fa-pause');                    
-                }
-            });
-
-            // javascript code for Reserve Table
-            $("#reserveButton").click(function(){
-            $('#reserveModal').modal('show');
-            });
-
-            // javascript code for Login Button
-            $("#loginButton").click(function(){
-            $('#loginModal').modal('show');
-            });
-
-
-        //   Bootstrap JQuery component example pause and play two buttons
-        //   $(document).ready(function(){
-        //       $("#mycarousel").carousel({ interval : 2000 });
-        //       $("#carousel-pause").click(function() {
-        //           $("#mycarousel").carousel('pause');
-        //       });
-        //       $("#carousel-play").click(function() {
-        //           $("#mycarousel").carousel('cycle');
-        //       });
-        //   });
-      </script>
+      <script src="js/scripts.js"></script>
     </body>
 
 </html>
